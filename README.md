@@ -1,4 +1,4 @@
-# Final Web Project For Epam - Library System
+# Final Web Project For Epam - Library Management System
 -------------------
 > The repository is compiled by ___Ihar Koshman___ for __EPAM TRAINING CENTER__
 ***

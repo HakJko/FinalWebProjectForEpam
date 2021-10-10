@@ -75,36 +75,37 @@
     </dependencies>
 
 	<build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-        </plugin>
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-        </plugin>
-        <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-        </plugin>
-        <plugin>
-          <artifactId>maven-war-plugin</artifactId>
-        </plugin>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-        </plugin>
+        <finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-clean-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <artifactId>maven-war-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <artifactId>maven-install-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
 
-        <plugin>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+            <plugin>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+          </plugins>
+        </pluginManagement>
   </build>
 
 </project>
